@@ -94,7 +94,7 @@ export const Header = (props: {totalStaked: string, stakedSelected: StakeEntryTo
           </div>
           <div className='order-2 col-span-1 sm:col-span-2 h-48 pt-3 font-mono uppercase'>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-2'>
-              <span className='col-span-1 md:col-span-2 text-xl xl:text-2xl'>Total collection staked: {Number(props.totalStaked).toLocaleString()}{' '}</span>
+              <span className='col-span-1 md:col-span-2 px-4 text-xl xl:text-2xl'>Total collection staked: {Number(props.totalStaked).toLocaleString()}{' '}</span>
               <div className='row-span-3 col-span-1 px-3 md:px-0'>
                 {!stakePoolMetadata?.notFound && stakedTokenDatas && rewardMintInfo.data && rewards.data && (
                 <div className='border-2 border-red-700 px-4 pl-16 md:pl-1'>

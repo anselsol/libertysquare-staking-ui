@@ -657,7 +657,7 @@ function Home() {
                   </div>
                 ) : (
                   <>
-                    <div className="mt-2 flex flex-row-reverse flex-wrap justify-between gap-5">
+                    <div className="mt-2 pt-2 flex flex-row-reverse flex-wrap justify-between gap-5">
                       <div className="flex gap-5">
                         <MouseoverTooltip title="Attempt to unstake all tokens at once">
                           <button
@@ -671,9 +671,9 @@ function Home() {
                                 stakePoolMetadata?.colors?.fontColorSecondary ||
                                 stakePoolMetadata?.colors?.fontColor,
                             }}
-                            className="my-auto flex cursor-pointer rounded-md px-4 py-2 hover:scale-[1.03]"
+                            className="my-auto flex cursor-pointer px-4 py-2 hover:scale-[1.03] border-2 border-red-700"
                           >
-                            <span className="my-auto">Select All Staked</span>
+                            <span className="my-auto">SELECT ALL STAKED</span>
                           </button>
                         </MouseoverTooltip>
                       </div>
@@ -689,9 +689,9 @@ function Home() {
                               color:
                                 stakePoolMetadata?.colors?.fontColor,
                             }}
-                            className="my-auto flex cursor-pointer rounded-md px-4 py-2 hover:scale-[1.03]"
+                            className="my-auto flex cursor-pointer px-4 py-2 hover:scale-[1.03] border-2 border-red-700"
                           >
-                            <span className="my-auto">Select All Unstaked</span>
+                            <span className="my-auto">SELECT ALL UNSTAKED</span>
                           </button>
                         </MouseoverTooltip>
                       </div>
