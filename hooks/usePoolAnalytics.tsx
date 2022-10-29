@@ -19,6 +19,7 @@ export const usePoolAnalytics = () => {
       if (!stakePoolId || !stakePoolMetadata) {
         return analyticsData
       }
+      //@ts-ignore
       const analytics = stakePoolMetadata.analytics
       if (!analytics) return analyticsData
 
