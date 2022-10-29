@@ -48,7 +48,7 @@ export const usePoolAnalytics = () => {
                 analyticsData[md] =
                   analyticsData[md]! /
                   (analytic.metadata.totals
-                    ? analytic.metadata.totals?.find((data) => data.key === md)
+                    ? analytic.metadata.totals?.find((data: any) => data.key === md)
                       ?.value ||
                     stakePoolMetadata.maxStaked ||
                     1
