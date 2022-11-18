@@ -786,11 +786,11 @@ function Home() {
                                     <div className="mt-2">
                                       <div className="flex w-full flex-row justify-between font-mono uppercase">
                                         <span>Gang:</span>
-                                        {tk.metadata?.data.attributes.find((attr: any) => attr.trait_type === "1- Gang").value || "Cannot read Gang"}
+                                        {tk.metadata?.data.attributes.find((attr: any) => attr.trait_type === "1- Gang")?.value || "Cannot read Gang"}
                                       </div>
                                       <div className="flex w-full flex-row justify-between font-mono uppercase">
                                         <span>Class:</span>
-                                        {tk.metadata?.data.attributes.find((attr: any) => attr.trait_type === "2- Class").value || "Cannot read Class"}
+                                        {tk.metadata?.data.attributes.find((attr: any) => attr.trait_type === "2- Class")?.value || "Cannot read Class"}
                                       </div>
                                       {tk.stakeEntry &&
                                         tk.stakeEntry.parsed.amount.toNumber() >
